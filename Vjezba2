@@ -1,0 +1,82 @@
+1) mkdir zad1
+cd zad1
+cp ~/materijali/mint_download_links .
+
+2) mkdir zad2
+cd materijali/
+cp towns ~/zad2/
+cd ~
+cd zad2
+ls
+
+3) mkdir zad3
+cd zad3
+mkdir d1
+mkdir d2
+touch f1
+touch f2
+mv f1 f2 d1/
+cd d2
+cp ../d1/f1 ../d1/f2 .
+cd ~
+
+4) mkdir zad4
+cd zad4
+cp ~/materijali/{mjesta,towns} .
+
+5) mkdir zad5
+cd zad5
+cp -r ~/materijali/{logs,numbers} .
+// Nisam moga nac direktorija Towns ?
+
+6) mkdir zad6
+cd zad6
+cp ~/materijali/towns gradovi
+
+7) mkdir zad7
+cd zad7
+cp ~/materijali/towns .
+mkdir moved
+mv towns moved/
+
+8) mkdir zad8
+cd zad8
+cp -r ~/materijali/logs ~/zad8/logovi
+
+9) mkdir zad9
+cd zad9
+mkdir "My Documents"
+mv "My Documents" "My old documents"
+
+10) mkdir zad10
+cd zad10
+touch .hidden1
+touch .hidden2
+mkdir tmp
+mv .hidden* tmp/  ILI mv .hidden1 .hidden2 tmp/
+mv tmp temp
+tree -a
+
+11) mkdir zad11
+cd zad11
+touch a b c d e
+
+12) mkdir zad12
+cd zad12
+mkdir ~/zad12/Characters && cp ~/zad11/{a,b,c,d,e} ~/zad12/Characters/
+
+13) mkdir zad13
+cd zad13
+for i in {0..9}; do mkdir $i; done
+
+14) mkdir zad14
+cd zad14
+date > "My signature"
+nano "My signature"
+cat "My signature"
+
+15) mkdir zad15
+cd zad15
+date "+%Y%m%d-%H%M%S" > timestamp
+cat timestamp
+
