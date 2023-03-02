@@ -1,0 +1,59 @@
+1) mkdir zad1
+cd /materijali
+ls m*
+ls m* > listing
+ls m* > ~/zad1/listing
+ls /materijali/m* > listing
+ls /materijali/m* > ~/zad1/listing
+
+2) mkdir zad2
+cd /materijali
+ls -1 m* > ~/zad2/listing
+
+3) mkdir zad3
+cd zad3
+cp -r /materijali/letters ./ && find ./letters -maxdepth 1 -type f -name '??' -delete
+
+4) mkdir zad4
+find /var/log -type d -readable -prune -o -type f -name 'syslog.*.gz' -exec basename {} \; > ~/zad4/listing
+
+Ovo vrlo vjerojatno ne valja, jebiga 🚩
+
+5) mkdir zad5
+cd zad5
+cp -r /materijali/letters . && mv letters slova && mv slova/*B .
+
+6) mkdir zad6
+cd zad6
+ls -laS --block-size=K /materijali | awk '{if($1 ~ /^-/) print $9, $5}' > size_sorted_desc
+
+I guess 🤷
+
+7) mkdir zad7
+cd zad7
+ls -ltr --time-style=long-iso /materijali | awk '{if($1 ~ /^-/) print $6" "$7" "$8, $9}' | tac > ./time_sorted_asc
+
+8) mkdir zad8
+cd /materijali
+ls -1 *.log > ~/zad8/listing
+
+9) mkdir zad9
+cd /materijali
+ls -1 -d *user* > ~/zad9/listing
+cat ~/zad9/listing
+
+10) mkdir zad10
+cd ~/materijali/backup/
+ls -1 *2018* > ~/zad10/listing
+
+11) mkdir zad11
+cd zad11
+ls -1 ~/materijali/logs-backup-*/backup* > listing
+
+12) 
+
+
+
+
+
+
