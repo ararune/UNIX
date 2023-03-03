@@ -50,7 +50,17 @@ ls -1 *2018* > ~/zad10/listing
 cd zad11
 ls -1 ~/materijali/logs-backup-*/backup* > listing
 
-12) 
+12) mkdir zad12
+cd /materijali/backup
+ls -1 backup_[0-9][0-9][0-9][0-9]1[12][0-9][0-9].zip > ~/zad12/listing
+
+13)mkdir zad13
+ls -1 -d ~/zad*/listing > ~/zad13/list_all
+
+14) mkdir zad14
+cat ~/zad*/listing >> ~/zad14/list_all_content
+
+
 
 
 
