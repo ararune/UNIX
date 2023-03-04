@@ -17,7 +17,10 @@ cp -r /materijali/letters ./ && find ./letters -maxdepth 1 -type f -name '??' -d
 4) mkdir zad4
 find /var/log -type d -readable -prune -o -type f -name 'syslog.*.gz' -exec basename {} \; > ~/zad4/listing
 
-Ovo vrlo vjerojatno ne valja, jebiga 🚩
+Ovo vrlo vjerojatno ne valja, jebiga 🚩 
+cd /var/log 
+ls syslog.*.gz 
+-> Ovo bi trebalo bit al nmg testirat doma
 
 5) mkdir zad5
 cd zad5
