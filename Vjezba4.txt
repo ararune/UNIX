@@ -39,7 +39,16 @@ ZA IZBRISAT : for i in {1..10}; do rm -rf dir$i; done
 
 16) mkdir zad16 && mkdir -p ~/zad16 && cd ~/zad16 && touch {1,I,l}{1,I,l}{1,I,l}
 
-17) 
+17) for year in {$(date +%Y),$(date -d '+1 year' +%Y),$(date -d '+2 years' +%Y),$(date -d '+3 years' +%Y)}; do
+    for month in {01..12}; do
+        mkdir -p "${year}-${month}"
+    done
+done
+
+ILI (ova je slađa) 
+mkdir zad17 && for y in {0..2}; do for m in {1..12}; do d=$(date -d "$(date +%Y-%m-15) +$y year +$((m-1)) month" +%Y-%m); mkdir -p ~/zad17/$d; done; done
+
+
 
 
 
