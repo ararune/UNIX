@@ -10,7 +10,36 @@ ILI IZ TEKUĆEG DIREKTORIJA DA NE ZAPIŠE PATH
 cd /materijali
 wc -lwm md5* > ~/zad4/count
 
-5) 
+5) awk '{print NR}' /materijali/towns > ~/zad5/lines && awk '{print NF}' /materijali/towns > ~/zad5/words && wc -c /materijali/towns | awk '{print $1}' > ~/zad5/chars
+
+6) pi | head -n 1 | wc -m > ~/zad6/pi_count
+
+7) fortune | cowsay -f $(ls /usr/share/cowsay/cows/ | shuf -n1) > ~/zad7/smart_cow
+
+8) cowsay -l | tail -n +2 | awk '{print $1}' > ~/zad8/animals
+I GUESS? Treba pogledat, prilagodit možda, nmg testirat kući
+
+9) ls ../*cow*.{jpg,png,gif} > ~/zad9/cows
+IDFK
+
+10) 
+
+11) cowsay $(seq 105) | cowsay -f $(ls /usr/share/cowsay/cows/ | grep -E "^moose.cow$|^beavis.zen.cow$") > ~/zad11/math_cow
+ILI
+for i in {1..105}; do echo $i | cowsay -f $(ls /usr/share/cowsay/cows/ | grep -E "^moose.cow$|^beavis.zen.cow$") >> ~/zad11/math_cow; done
+
+12) for i in {1..10}; do mkdir dir$i; done
+ZA IZBRISAT : for i in {1..10}; do rm -rf dir$i; done
+
+13) echo {0000..9999} | tee >(wc -m > ~/zad13/char_count) | less -FX
+
+14) echo {0000..9999} > ~/zad14/numbers && wc -w ~/zad14/numbers | cut -d' ' -f1 > ~/zad14/word_count
+
+15) mkdir zad15 && cd zad15 && mkdir ~/zad15/alphabet && cd ~/zad15/alphabet && touch {A..Z}
+
+16) mkdir zad16 && mkdir -p ~/zad16 && cd ~/zad16 && touch {1,I,l}{1,I,l}{1,I,l}
+
+17) 
 
 
 
