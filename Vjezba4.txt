@@ -1,1 +1,17 @@
 1) sort /materijali/towns > ~/zad1/towns_sorted
+
+2) tail -n 2 /materijali/towns > ~/zad2/towns_last
+
+3) head -n 3 /materijali/towns | tail -n 1 > ~/zad3/towns_third
+
+4) wc -lwm /materijali/md5* > ~/zad4/count
+IZ HOME DIREKTORIJA
+ILI IZ TEKUĆEG DIREKTORIJA DA NE ZAPIŠE PATH
+cd /materijali
+wc -lwm md5* > ~/zad4/count
+
+5) 
+
+
+
+
