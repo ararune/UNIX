@@ -1,0 +1,1 @@
+1) sort /materijali/towns > ~/zad1/towns_sorted
