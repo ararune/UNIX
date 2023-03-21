@@ -1,0 +1,51 @@
+log=/materijali/web_access.log
+words=/usr/share/dict/words
+for i in {1..14}; do mkdir -p ~/zad$i; done
+
+# zad1
+grep "terminated$" $log > ~/zad1/result
+
+# zad2
+grep -c "Windows 9[0-9]" $log > ~/zad2/result
+
+# zad3
+grep -c "^$" $log > ~/zad3/result
+
+# zad4
+grep "^[[:alpha:]]\{7\}bow$" $words > ~/zad4/result
+
+# zad5
+grep "[^[:space:]]eth0" $log > ~/zad5/result
+
+# zad6
+grep "\(.\)\1.*\1" $words > ~/zad6/result
+
+# zad7
+grep -i "\b[a-hj-z]\.i\.\.i\.\.i\w*\b" $words > ~/zad7/result
+
+# zad8
+grep -o "192\.168\.16\.[0-9]\{1,3\}" $log > ~/zad8/result
+
+# zad9
+grep "i3-.*T$" /materijali/intel_processor_list > ~/zad9/result
+
+# zad10
+curl https://personal.oss.unist.hr/~ngrgic/linux/rac | grep -i "racun" > zad10/racun
+
+# zad11
+curl https://personal.oss.unist.hr/~ngrgic/rac | grep -i "^p.*racunala.*" | wc -l > zad11/racun-count
+
+# zad12
+curl https://personal.oss.unist.hr/~ngrgic/rac | sed 's/racunar/racunal/g' > zad/racunalstvo
+
+# zad13
+curl https://personal.oss.unist.hr/~ngrgic/rac | sed 's/racun/RACUN/g' | sed 's/Racun/RACUN/g' | sed 's/RACUN/racunal/g' > zad/racunalstvo
+
+# zad14
+sed '/^$/d' materijali/towns_spaced > ~/zad14/towns_spaced_noempty
+
+
+
+
+
+
