@@ -1,0 +1,53 @@
+1) wget https://personal.oss.unist.hr/~ngrgic/linux/tutor
+vi tutor
+ESC -> : -> q! -> ENTER
+
+2) nano program
+INTEGER MAIN()
+[
+INTEGER first, second
+printf "Enter two numbers:"
+scanf "%d %d", &first, &second
+printf "%d", first + second
+]
+CTRL + O
+ENTER
+CTRL + X
+
+3) ctrl + o za novi prazan red nakon cursora
+ESC + d$ za izbrisat cilu liniju
+ESC + i za pisat
+ESC + x za izbrisat znak na cursoru
+ESC + 0 za otić na početak reda
+ESC + A za dodat tekst na kraj reda
+
+4) for i in {1..3}; do mkdir dir$i && cd dir$i && touch file{08..12} && cd ..; done && tar -czvf archive.tar.gz dir* && rm -r dir*
+
+5) tar -tzvf archive.tar.gz > archive_report
+
+6) tar -czvf tutor.tar.gz ~/tutor
+
+7) tar -xvf /materijali/logs1602.tar && find . -type f -name '*.log' | tar -czvf logs.tar.gz -T -
+
+TEST : tar -tzvf logs.tar.gz
+
+8) find /materijali/atmusers -type d -name '???????' -exec tar -czvf atmusers.tar.gz {} +
+
+TEST: tar -tzvf atmusers.tar.gz
+
+find /materijali/atmusers': find files and directories in the '/materijali/atmusers' directory and its subdirectories.
+'-type d': limit the search to directories only.
+'-name '???????'': filter directories whose names consist of exactly 7 characters by using the '???????' pattern, where each '?' represents a single character.
+'-exec tar -czvf atmusers.tar.gz {} +': execute the 'tar' command for each found directory by using the '{}' placeholder to represent the directory path, and the '+' character to group multiple paths into a single command. The 'tar' command creates a new archive named 'atmusers.tar.gz' ('-czvf atmusers.tar.gz') and adds the contents of the directory as members of the archive.
+
+9) find zad{1..8} -type f -name '*.tar.gz' -exec cp {} . \;
+Netestirano jer nisam radija s folderima
+
+10) curl wttr.in/Split
+curl -s wttr.in/Split | head -n 7 > prognoza
+
+11) curl -s https://personal.oss.unist.hr/~ngrgic/linux/tutor | wc -w > remote_wc
+
+12) git clone https://github.com/ossunix/hello_world_template.git && tar -czvf repo.tar.gz hello_world_template/
+
+
