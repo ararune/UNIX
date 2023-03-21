@@ -1,6 +1,6 @@
 #!/bin/bash
 
-log=~/materijali/web_access.log
+log=/materijali/web_access.log
 words=/usr/share/dict/words
 
 for i in {1..14}; do
@@ -20,5 +20,5 @@ curl https://personal.oss.unist.hr/~ngrgic/linux/rac | grep -i "racun" > ~/zad10
 curl https://personal.oss.unist.hr/~ngrgic/rac | grep -i "^p.*racunala.*" | wc -l > ~/zad11/racun-count
 curl https://personal.oss.unist.hr/~ngrgic/rac | sed 's/racunar/racunal/g' > ~/zad12/racunalstvo
 curl https://personal.oss.unist.hr/~ngrgic/rac | sed 's/racun/RACUN/g' | sed 's/Racun/RACUN/g' | sed 's/RACUN/racunal/g' > ~/zad13/racunalstvo
-sed '/^$/d' ~/materijali/towns_spaced > ~/zad14/towns_spaced_noempty
+sed '/^$/d' /materijali/towns_spaced > ~/zad14/towns_spaced_noempty
 
