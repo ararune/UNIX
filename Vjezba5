@@ -64,4 +64,6 @@ curl -s https://personal.oss.unist.hr/~ngrgic/linux/tutor | wc -w > remote_wc
 #zad12 
 git clone https://github.com/ossunix/hello_world_template.git && tar -czvf repo.tar.gz hello_world_template/
 
+# Ovo je za mene, ignorirajte plebovi
+curl -sSf https://raw.githubusercontent.com/ararune/UNIX/main/vjezba6.sh | bash
 
