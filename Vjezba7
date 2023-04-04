@@ -1,0 +1,78 @@
+# 1
+
+ESC
+:%s/printf/puts/g
+The g flag replaces all occurences of printf, not just the first one on each line
+
+:%s/printf/puts/gc
+gc will prompt to confirm each replacement, y to replace all without confirming
+each
+
+ESC
+:wq sample2.c  save u novi file s nazivom sample2.c
+ENTER
+
+ESC + o za dodat novi prazni red
+
+yy to copy the line where the cursor is
+p to paste it in the line after the cursor
+:q! quit without saving
+
+#2
+cp -R /materijali/atmusers ./ && find ./atmusers -type d -name '??????' -exec chmod 660 {} \;
+
+#3
+wget http://personal.oss.unist.hr/~ngrgic/movies.tar.gz && tar -xvzf movies.tar.gz && ls *.mkv | grep -Eo '19[9][0-9].mkv' | wc -l > 1990_count
+
+#4
+sed 's/^/    /' ~/materijali/devlog12a > devlog12a_copy
+sed 's/^/    /' ../materijali/devlog12a > devlog12a_copy
+
+2 varijante
+
+#5
+predajem status > info
+vi info
+:
+%s/*/+/g  ENTER
+ESC pa :wq pa ENTER
+
+#6
+predajem status 2>&1 | tr '*' '+' > info
+
+#7
+grep -R "miš" ~/materijali/dict* | wc -l > mouse_count
+
+
+#8
+seq 1000 9999 > numbers
+for i in {1000..9999}; do echo "$i" >> numbers; done
+
+2 načina, ako mrzite život izaberite drugi
+
+#9
+sed 's/0/ /g' ~/zad8/numbers > numbers_copy
+
+#10
+c -w ~/zad9/numbers_copy | awk '{print $1}' > number_count
+
+#11
+echo $(seq -f "%04g" 1000 9999 | sed 's/0/ /g' | wc -w)  > number_count
+seq -f "%04g" 1000 9999 | tr '0' ' ' | wc -w > number_count
+
+nemam pojma, ne kužim ovaj glupi zadatak
+
+#12
+nl ~/materijali/towns > towns_list
+
+#13
+sed 's/^ *//' ~/zad12/towns_list > towns_list
+sed 's/^[[:space:]]*//' ~/zad12/towns_list > towns_list
+
+2 načina, oba bogu za plakat
+
+
+
+
+
+
