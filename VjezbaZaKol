@@ -1,0 +1,450 @@
+911  cd zad1
+  912  pwd
+  913  echo ~
+  914  ls ~
+  915  ls -a ~
+  916  ls -al ~
+  917  mkdir vjezba
+  918  cd vjezba/
+  919  tree
+  920  tree ~
+  921  cd ..
+  922  cd zad2
+  923  touch prva druga treca
+  924  ls
+  925  cd ..
+  926  tree > zad3/treeoutput
+  927  cat zad3/treeoutput 
+  928  cd zad4
+  929  cp ~/materijali/mjesta ./mjesta_kopija && chmod 400 ./mjesta_kopija
+  930  cat mjesta_kopija 
+  931  nano mjesta_kopija 
+  932  rm mjesta_kopija 
+  933  ls
+  934  chmod 700 mjesta_kopija 
+  935  rm mjesta_kopija 
+  936  ls
+  937  ls -al
+  938  cp ~/materijali/mjesta ./mjesta_kopija && chmod mjesta_kopija 400
+  939  cp ~/materijali/mjesta ./mjesta_kopija && chmod 400 ./mjesta_kopija
+  940  ls
+  941  ls -al
+  942  cd ..
+  943  cd zad5
+  944  whoami
+  945  whoami > myname && chmod 777 ./myname
+  946  ls -al
+  947  cat myname 
+  948  cd ..
+  949  cd zad6
+  950  passwd
+  951  ls -al
+  952  cd zad7
+  953  echo /etc/passwd
+  954  ls /etc/passwd
+  955  nano /etc/passwd
+  956  less /etc/passwd
+  957  cd ..
+  958  cd zad8
+  959  ls -l ~
+  960  cd ..
+  961  ls -l /home
+  962  cd zad10
+  963  chmod 700 ~/zad10
+  964  cd ..
+  965  ls -al
+  966  cd zad10
+  967  touch 100 && chmod 400 ./100
+  968  ls -al
+  969  cd ..
+  970  cd zad11
+  971  mkdir protected && cd protected && touch my_file
+  972  cd ..
+  973  chmod 400 ./protected
+  974  cd protected/
+  975  chmod 111 ./protected
+  976  cd protected/
+  977  ls
+  978  cd ..
+  979  chmod 555 ./protected/
+  980  ls
+  981  cd protected/
+  982  ls
+  983  rm my_file 
+  984  cd ..
+  985  cd zad12
+  986  mkdir backup && chmod 555 backup
+  987  ls
+  988  cd backup/
+  989  cp ~/materijali/towns ./towns
+  990  cp ~/materijali/towns ./
+  991  cd ~
+  992  cd zad13
+  993  touch 00 & chmod 40DDD0 00
+  994  touch 00 && chmod 400 00
+  995  mkdir 01 && chmod 500 01
+  996  touch 02 && chmod 400 02
+  997  touch 03 && chmod 200 03
+  998  touch 04 && chmod 100 04
+  999  touch 05 && chmod 400 05
+ 1000  touch 06 && chmod 200 06
+ 1001  touch 07 && chmod 100 07
+ 1002  touch 08 && chmod 400 08
+ 1003  touch 09 && chmod 200 09
+ 1004  touch 10 && chmod 100 10
+ 1005  mkdir 11 & chmod 777 11
+ 1006  chmod 777 *
+ 1007  ls -al
+ 1008  cd ..
+ 1009  rm -rf *zad*
+ 1010  chmod 777 *zad*
+ 1011  rm -rf *zad*
+ 1012  cd zad11
+ 1013  chmod 777 protected
+ 1014  cd protected/
+ 1015  chmod 777 my_file 
+ 1016  cd ~
+ 1017  rm -rf *zad*
+ 1018  ls
+ 1019  mkdir zad{1..15}
+ 1020  cd zad1
+ 1021  cp ~/materijali/mint_download_links ./
+ 1022  ls
+ 1023  cd ~/zad2
+ 1024  cd ~/materijali/
+ 1025  cp towns ~/zad2
+ 1026  cd ~/zad2
+ 1027  ls
+ 1028  cd ~/zad3
+ 1029  touch f1 f2
+ 1030  mkdir d1 d2
+ 1031  mv *f* d1
+ 1032  cd d1
+ 1033  ls
+ 1034  cd ..
+ 1035  cd d2
+ 1036  cp ../d1/*f* ./
+ 1037  ls
+ 1038  cd ~/zad4
+ 1039  cp ~/materijali/{mjesta,towns} .
+ 1040  ls
+ 1041  cd ~/zad5
+ 1042  cp ~/materijali/{logs,letters} .
+ 1043  cp -r ~/materijali/{logs,letters} .
+ 1044  ls
+ 1045  ls -al
+ 1046  cd ~/zad6
+ 1047  cp ~/materijali/towns ./gradovi
+ 1048  ls
+ 1049  cd ~/zad7
+ 1050  cp ~/materijali/towns .
+ 1051  ls
+ 1052  mkdir moved && mv towns ./moved
+ 1053  ls
+ 1054  cd moved
+ 1055  ls
+ 1056  cd ~/zad8
+ 1057  cp ~/materijali/logs ./logovi
+ 1058  cp -r ~/materijali/logs ./logovi
+ 1059  ls -al
+ 1060  ls
+ 1061  cd ~/zad9
+ 1062  mkdir "My Documents"
+ 1063  mv "My Documents" "My old documents"
+ 1064  ls
+ 1065  rm My\ old\ documents/
+ 1066  rm -rf My\ old\ documents/
+ 1067  mkdir "My Documents"
+ 1068  mv "My Documents" "My old documents"
+ 1069  ls
+ 1070  cd ..
+ 1071  cd zad10
+ 1072  touch .hidden{1..2}
+ 1073  ls
+ 1074  ls -a
+ 1075  mkdir tmp
+ 1076  mv .hidden{1..2} ./tmp
+ 1077  tree -a
+ 1078  tree
+ 1079  tree -a
+ 1080  cd ~/zad11
+ 1081  touche a b c d e
+ 1082  ls
+ 1083  touch a b c d e
+ 1084  ls
+ 1085  cd ~/zad12
+ 1086  mkdir characters
+ 1087  cp ~/zad11/{a,b,c,d,e} ./
+ 1088  ls
+ 1089  rm {a,b,c,d,e}
+ 1090  ls
+ 1091  cd characters/
+ 1092  cp ~/zad11/{a,b,c,d,e} ./
+ 1093  ls
+ 1094  cd ~/zad13
+ 1095  mkdir {0..9}
+ 1096  ls
+ 1097  ls -al
+ 1098  cd ~/zad14
+ 1099  date > "My Signature"
+ 1100  cat My\ Signature 
+ 1101  nano My\ Signature 
+ 1102  cat My\ Signature 
+ 1103  cd ~/zad15
+ 1104  echo $(date +%Y%m%d-%H%M%S) > timestamp
+ 1105  cat timestamp 
+ 1106  cd ..
+ 1107  history > history
+ 1108  mkdir zad{1..14}
+ 1109  ls 
+ 1110  rm -rf zad{1..14}
+ 1111  ls
+ 1112  mkdir zad{1..14}
+ 1113  cd zad1
+ 1114  ls ~/materijali/m*
+ 1115  ls -al ~/materijali/m*
+ 1116  ls ~/materijali/m*
+ 1117  ls ~/materijali/m* ./listing
+ 1118  ls ~/materijali/m* > listing
+ 1119  cat listing 
+ 1120  ls ~/materijali/m* > ~/zad1/listing
+ 1121  cat listing 
+ 1122  cd ~/materijali/
+ 1123  ls m* > ~/zad1/listing
+ 1124  cd ~/zad1
+ 1125  cat listing 
+ 1126  ls
+ 1127  cd ~/zad2
+ 1128  cd ~/materijali/
+ 1129  ls -1 ~/materijali/m* > ~/zad2/listing
+ 1130  cd ~/zad2
+ 1131  cat listing 
+ 1132  naano listing 
+ 1133  nano listing 
+ 1134  cd ~/zad1
+ 1135  nano listing 
+ 1136  cd ~/zad3
+ 1137  cp ~/materijali/letters/ ./
+ 1138  cp -r ~/materijali/letters/ ./
+ 1139  ls
+ 1140  cd letters/
+ 1141  ls
+ 1142  rm '??'
+ 1143  rm ??
+ 1144  ls
+ 1145  ls ??
+ 1146  ls ???
+ 1147  cd ~/zad4
+ 1148  cd ..
+ 1149  ls /var/log/syslog.?.gz
+ 1150  ls /var/log/syslog.??.gz
+ 1151  ls /var/log/syslog.?.gz
+ 1152  ls -1 /var/log/syslog.?.gz
+ 1153  ls -1 /var/log/syslog.?.gz | xargs -n1 basename
+ 1154  ls -1 /var/log/syslog.?.gz | xargs -n1 basename > ~/zad4/listing
+ 1155  cd zad5
+ 1156  cp -r ~/materijali/letters/./
+ 1157  cp -r ~/materijali/letters/ ./
+ 1158  ls
+ 1159  mv letters slova
+ 1160  ls
+ 1161  mv ./slova/*B ./
+ 1162  ls
+ 1163  cd ~/zad6
+ 1164  ls
+ 1165  ls -AlSR ~/materijali/ 
+ 1166  ls -AlSR ~/materijali/ > size_sorted_desc
+ 1167  nano size_sorted_desc 
+ 1168  cd ~/zad7
+ 1169  ls -alU ~/materijali/ > time_sorted_asc
+ 1170  nano time_sorted_asc 
+ 1171  ls -alrt ~/materijali/ > time_sorted_asc 
+ 1172  nano time_sorted_asc 
+ 1173  cd ~/materijali/
+ 1174  ls -1 *.log
+ 1175  ls -1 *.log > ~/zad8/listing
+ 1176  cd ~/zad8
+ 1177  ls
+ 1178  cat listing 
+ 1179  cd ~/zad9
+ 1180  cd ~/materijali/
+ 1181  ls -r -1 *user*
+ 1182  ls -1 *user*
+ 1183  ls -1 *user* > ~/zad9/listing
+ 1184  cd ~/zad9
+ 1185  cat listing 
+ 1186  cd ~/zad10
+ 1187  cd ~/materijali/backup/
+ 1188  ls -1 *2018*
+ 1189  ls -1 *2018* > ~/zad10/listing
+ 1190  cd ..
+ 1191  ls logs-backup-?
+ 1192  ls -r ./logs-backup-?/backup*
+ 1193  ls ./logs-backup-?/backup*
+ 1194  ls ./logs-backup-?/backup* | xargs -n1 basename
+ 1195  ls ./logs-backup-?/backup* | xargs -n1 basename > ~/zad11/listing
+ 1196  cd backup/
+ 1197  ls
+ 1198  ls backup_????1[12]*
+ 1199  ls -1 backup_????1[12]* > ~/zad12/listing
+ 1200  cd ~/zad12
+ 1201  cat listing 
+ 1202  cd ~/materijali/backup/
+ 1203  ls
+ 1204  ls -2 backup_????1[12]* > ~/zad12/listing
+ 1205  ls -1 backup_????1[12]* > ~/zad12/listing
+ 1206  cd ~
+ 1207  ls -r ./*zad*/listing
+ 1208  ls -r ./*zad*/listing > ~/zad13/list_all
+ 1209  cd zad13
+ 1210  cat list_all 
+ 1211  cd ..
+ 1212  ls -r *zad*/listing > ~/zad13/list_all
+ 1213  cd zad13
+ 1214  cat list_all 
+ 1215  cd ..
+ 1216  cat *zad*/listing > ~/zad14/list_all_content
+ 1217  cd zad14
+ 1218  cat list_all_content 
+ 1219  cd ..
+ 1220  mkdir vjezba3
+ 1221  mv *zad* ./vjezba3
+ 1222  ls
+ 1223  cd vjezba3/
+ 1224  ls
+ 1225  cd ..
+ 1226  ls
+ 1227  sort ~/materijali/towns
+ 1228  cat ~/materijali/towns
+ 1229  mkdir zad{1..17}
+ 1230  sort ~/materijali/towns > zad1/towns_sorted
+ 1231  cat zad1/towns_sorted 
+ 1232  tail -2 ~/materijali/towns
+ 1233  tail -2 ~/materijali/towns > zad2/towns_last
+ 1234  sort ~/materijali/towns | head -n 3
+ 1235  sort ~/materijali/towns | head -n 3 | tail -n 1
+ 1236  sort ~/materijali/towns | head -n 3 | tail -n 1 > ~/zad3/towns_third
+ 1237  wc -lwm ~/materijali/md5*
+ 1238  wc -lwm ~/materijali/md5* > zad4/count
+ 1239  wc -l ~/materijali/towns | awk '{print $1}'
+ 1240  wc -l ~/materijali/towns | awk '{print $1}' > zad5/lines
+ 1241  wc -w ~/materijali/towns | awk '{print $1}' > zad5/words
+ 1242  wc -c ~/materijali/towns | awk '{print $1}' > zad5/chars
+ 1243  cat zad5/chars
+ 1244  cat zad5//lines
+ 1245  cat zad5/lines
+ 1246  pi
+ 1247  pi | wc -c
+ 1248  pi | wc -c > zad6/pi_count
+ 1249  wc -c | pi
+ 1250  pi | wc -c > zad6/pi_count
+ 1251  cat zad6/pi_count 
+ 1252  fortune
+ 1253  cowsay
+ 1254  fortune | cowsay
+ 1255  fortune | cowsay > zad7/smart_cow
+ 1256  cat zad7/smart_cow 
+ 1257  fortune | cowsay > zad7/smart_cow
+ 1258  cat zad7/smart_cow 
+ 1259  cowsay -f tux "Linux rules"
+ 1260  cowsay -l
+ 1261  cowsay -f turkey "TURKEY"
+ 1262  cowsay -l
+ 1263  cowsay -f vader "I am your father"
+ 1264  cd /usr/share/cowsay/cows
+ 1265  ls
+ 1266  ls -1
+ 1267  ls -1 > ~/zad8/animals
+ 1268  cd ~
+ 1269  cd /usr/share/cowsay/cows
+ 1270  ls
+ 1271  ls -1 cow.cow
+ 1272  ls -1 *cow.cow
+ 1273  ls -1 *cow.cow > ~/zad9/cows
+ 1274  cd ~
+ 1275  cd zad10
+ 1276  cp ~/zad9/cows
+ 1277  cp ~/zad9/cows ./
+ 1278  ls
+ 1279  fortune | cowsay -f stegosaurus >> cows
+ 1280  cat cows 
+ 1281  cd ..
+ 1282  cowsay {1..105}
+ 1283  cowsay {1..105} > zad11/math_cow
+ 1284  cd zad12
+ 1285  mkdir dir{0..9}
+ 1286  ls
+ 1287  cd ..
+ 1288  echo {0000..9999} | less
+ 1289  echo {0000..9999} | wc -c
+ 1290  echo {0000..9999} | wc -c > zad13/char_count
+ 1291  echo {0000..9999} > zad14/numbers | wc -w > zad14/word_count
+ 1292  cd zad14
+ 1293  ls
+ 1294  cat numbers 
+ 1295  cat word_count 
+ 1296  cd ..
+ 1297  echo {0000..9999} > zad14/numbers | wc -w zad14/nubers > zad14/word_count
+ 1298  echo {0000..9999} > zad14/numbers && wc -w zad14/nubers > zad14/word_count
+ 1299  echo {0000..9999} > zad14/numbers | wc -w zad14/numbers > zad14/word_count
+ 1300  cd zad14
+ 1301  ls
+ 1302  cat word_count 
+ 1303  echo {0000..9999} > zad14/numbers | wc -w > zad14/word_count
+ 1304  cd ..
+ 1305  echo {0000..9999} | wc -c
+ 1306  echo {0000..9999} | > zad14/numbers
+ 1307  echo {0000..9999} | > zad14/numbers | wc -w > zad14/word_count
+ 1308  cd zad14
+ 1309  cat word_count 
+ 1310  cd ..
+ 1311  echo {0000..9999} | > zad14/numbers && wc -w zad14/numbers > zad14/word_count
+ 1312  cat zad14/word_count 
+ 1313  seq -w 0 9999 > numbers && wc -w zad14/numbers | cut -d' ' -f1 > zad14/word_count
+ 1314  cd zad14
+ 1315  cat word_count 
+ 1316  cd ..
+ 1317  echo {0000..9999} > zad14/numbers | wc -w > zad14/word_count
+ 1318  cd zad14
+ 1319  cat word_count 
+ 1320  cd ..
+ 1321  echo {0000..9999} > zad14/numbers | wc -w zad14/numbers > zad14/word_count
+ 1322  cd zad14
+ 1323  cat word_count 
+ 1324  echo {0000..9999} > zad14/numbers | wc -w zad14/numbers | awk '{print $1}'  > zad14/word_count
+ 1325  echo {0000..9999} > zad14/numbers | wc -w zad14/numbers | awk '{print $1}' > zad14/word_count
+ 1326  echo {0000..9999} > zad14/numbers | wc -w zad14/numbers && awk '{print $1}' > zad14/word_count
+ 1327  echo {0000..9999} > zad14/numbers | wc -w zad14/numbers | awk '{print $1}' > zad14/word_count
+ 1328  cd ..
+ 1329  echo {0000..9999} > zad14/numbers | wc -w zad14/numbers | awk '{print $1}' > zad14/word_count
+ 1330  cd zad14
+ 1331  cat word_count 
+ 1332  cd ..
+ 1333  cd zad15
+ 1334  mkdir alphabet
+ 1335  rm alphabet/
+ 1336  rm -rf alphabet/
+ 1337  mkdir alphabet
+ 1338  cd alphabet/
+ 1339  mkdir {A..Z}
+ 1340  ls
+ 1341  cd ~/zad16
+ 1342  touch {1,I,l}{1,I,l}{1,I,l}
+ 1343  ls
+ 1344  cd ~/zad17
+ 1345  mkdir {2023..2026}-{01.12}
+ 1346  ls
+ 1347  rm -rf {2023..2026}-{01.12}
+ 1348  mkdir {2023..2026}-{01..12}
+ 1349  ls
+ 1350  ls 2023
+ 1351  ls 2023*
+ 1352  ls
+ 1353  cd ..
+ 1354  ls
+ 1355  mkdir vjezba4
+ 1356  mv *zad* ./vjezba4
+ 1357  cd vjezba4
+ 1358  ls
+ 1359  cd ..
+ 1360  history > history
