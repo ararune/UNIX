@@ -1,0 +1,89 @@
+ 1805  mkdir vjezba10
+ 1806  cd vjezba10
+ 1807  mkdir zad{1..7}
+ 1808  cd zad1
+ 1809  nano hello.c
+ 1810  gcc hello.c -o hello
+ 1811  nano hello.c
+ 1812  gcc hello.c -o hello
+ 1813  ./hello > greeting 
+ 1814  cat greeting 
+ 1815  cd ../zad2
+ 1816  cd ..
+ 1817  touch rjesenja
+ 1818  cd zad2
+ 1819  nano greet.c
+ 1820  gcc greet.c -o greet
+ 1821  nano greet.c
+ 1822  gcc greet.c -o greet
+ 1823  ./greet Marko > greeting
+ 1824  cat greet
+ 1825  cat greeting
+ 1826  clear
+ 1827  cd ../zad3
+ 1828  nano fmodul.c
+ 1829  gcc -c fmodul.c -o fmodul.o
+ 1830  ar rcs libmodul.a fmodul.o
+ 1831  ls libmodul.a
+ 1832  nano main.c
+ 1833  gcc main.c -L. -lmodul -o apsolutni
+ 1834  ls
+ 1835  nano fmodul.h
+ 1836  gcc main.c -L. -lmodul -o apsolutni
+ 1837  ./apsolutni
+ 1838  cd ../zad4
+ 1839  nano abs.c
+ 1840  gcc abs.c -L. -lmodul -I../zad3 -o abs
+ 1841  gcc abs.c -L../zad3 -lmodul -I../zad3 -o abs
+ 1842  .abs
+ 1843  ./abs
+ 1844  cd ../zad5
+ 1845  nano mod.c
+ 1846  gcc mod.c -o mod
+ 1847  ./mod
+ 1848  ls
+ 1849  ./mod 5
+ 1850  ./mod -6
+ 1851  cd ../zad6
+ 1852  nano zad6.sh
+ 1853  chmod +x zad6.sh
+ 1854  ./zad6.sh
+ 1855  nano zad6.sh
+ 1856  ./zad6.sh
+ 1857  nano zad6.sh
+ 1858  ./zad6.sh
+ 1859  cd ../zad5
+ 1860  ls
+ 1861  cd ../zad6
+ 1862  nano zad6.sh 
+ 1863  rm zad6.sh
+ 1864  nano skripta.sh
+ 1865  chmod +x skripta.sh
+ 1866  ./skripta.sh 
+ 1867  ls
+ 1868  cat brojevi505-mod 
+ 1869  cd ../zad7
+ 1870  nano makefile
+ 1871  make
+ 1872  nano makefile
+ 1873  rm makefile
+ 1874  nano makefile
+ 1875  make
+ 1876  cat -e -t -v makefile
+ 1877  rm makefile 
+ 1878  nano Makefile
+ 1879  make
+ 1880  nano Makefile
+ 1881  cd ..
+ 1882  tree
+ 1883  ls
+ 1884  cd zad7
+ 1885  ls
+ 1886  rm Makefile 
+ 1887  nano Makefile
+ 1888  make
+ 1889  nano Makefile
+ 1890  cat Makefile 
+ 1891  rm Makefile 
+ 1892  nano Makefile
+ 1893  make
