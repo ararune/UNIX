@@ -1,0 +1,6 @@
+#!/bin/bash
+
+while read -r word; do
+  capitalized=$(echo "$word" | tr '[:lower:]' '[:upper:]')
+  echo "$capitalized" >> animals_capitalized
+done < /materijali/animals
