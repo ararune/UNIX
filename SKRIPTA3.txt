@@ -1,0 +1,6 @@
+#!/bin/bash
+
+while read -r broj; do
+  udvostrucen=$(./udvostruci "$broj")
+  echo "$udvostrucen" >> brojevi200
+done < /materijali/brojevi100
