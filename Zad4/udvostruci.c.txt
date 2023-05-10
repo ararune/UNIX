@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+    printf("Unesite broj: ");
+    scanf("%d", &num);
+    printf("Dvostruka vrijednost broja %d je %d\n", num, num*2);
+    return 0;
+}

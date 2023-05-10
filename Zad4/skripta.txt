@@ -1,0 +1,5 @@
+#!/bin/bash
+
+while read -r num; do
+    echo "$(echo "$num" | awk '{printf "%.17g", $1*2}')" >> brojevi200
+done < /materijali/brojevi100
