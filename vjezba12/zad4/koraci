@@ -1,1 +1,0 @@
-gcc broj.c -L/home/ararune/materijali -lbur -o broj
