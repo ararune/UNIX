@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Request user input for the number of exercises
+read -p "Unesite broj zadataka: " broj_zadataka
+
+# Log the current date and time
+timestamp=$(date)
+ 
+if ls -d zad* >/dev/null 2>&1; then
+  for dir in zad*
+  do
+    rm -rf "$dir"
+    echo "$timestamp - Directory $dir deleted" >> dircreator.log
+  done
+fi
+# Create new directories using a for loop and log the messages
+for ((i=1; i<=broj_zadataka; i++))
+do
+    dir="zad${i}"
+    mkdir "$dir"
+    echo "$timestamp - Directory $dir created" >> dircreator.log
+done

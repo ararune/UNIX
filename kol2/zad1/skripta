@@ -1,0 +1,12 @@
+#!/bin/bash
+
+file="$HOME/materijali/etc-passwd"
+
+if [ ! -f "$file" ]; then
+  echo "File $file does not exist."
+  exit 1
+fi
+
+awk -F: '$4 == 101 {print $1, $4}' $file > users101
+
+
