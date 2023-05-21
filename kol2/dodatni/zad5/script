@@ -1,0 +1,17 @@
+#!/bin/bash
+
+list=$(cat ~/materijali/dirlist)
+
+mkdir tmp || { echo "Greška: neuspjelo stvaranje tmp direktorija."; exit 1; }
+
+
+for i in $list
+do
+  mkdir tmp/"$i"
+done
+
+tar -czf dirs.tar.gz tmp/* || { echo "Greška: Neuspjelo pakiranje direktorija."; exit 1; }
+
+rm -r tmp
+
+echo "Proces uspješno završen."

@@ -1,0 +1,26 @@
+#!/bin/bash
+
+dirlist_file=$(realpath ~/materijali/dirlist)
+temp_dir="temp"
+
+# Provjera postojanja datoteke dirlist
+if [ ! -f "$dirlist_file" ]; then
+  echo "Greška: Datoteka $dirlist_file ne postoji."
+  exit 1
+fi
+
+# Stvaranje privremenog direktorija
+mkdir "$temp_dir" || { echo "Greška: Neuspjelo stvaranje privremenog direktorija."; exit 1; }
+
+# Čitanje naziva direktorija iz datoteke i stvaranje praznih direktorija
+while read -r dir_name; do
+  mkdir "$temp_dir/$dir_name"
+done < "$dirlist_file"
+
+# Pakiranje direktorija u arhivu dirs.tar.gz
+tar -czvf dirs.tar.gz "$temp_dir" || { echo "Greška: Neuspjelo pakiranje direktorija."; exit 1; }
+
+# Brisanje privremenog direktorija
+rm -rf "$temp_dir"
+
+echo "Proces uspješno završen."

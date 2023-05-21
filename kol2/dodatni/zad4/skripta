@@ -1,0 +1,11 @@
+#!/bin/bash
+
+while true; do
+  read -r -p  "Unesite riječ (ili 'stop' za izlaz): " rijec
+
+  if [ "$rijec" == "stop" ]; then
+	break
+  fi
+
+  echo "Unijeli ste: $rijec"
+done

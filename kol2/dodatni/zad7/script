@@ -1,0 +1,12 @@
+#!/bin/bash
+
+while read line
+do 
+  user=$(echo $line | cut -d' ' -f1)
+  pass=$(echo $line | cut -d' ' -f2)
+
+  if(( $(echo $pass | wc -c) > 9 ))
+	then
+	echo $user >> invalid_passwords
+  fi
+done < ~/materijali/user_passwd_list

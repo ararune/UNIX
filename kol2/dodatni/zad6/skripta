@@ -1,0 +1,16 @@
+#!/bin/bash
+
+while true; do 
+  current_time=$(date +"%T, %d.%m.%Y")
+  read -p "Current time and date is: $current_time. Repeat? (y/n) " answer
+
+  case $answer in
+	y|Y)
+	   continue;;
+	n|N)
+	   break;;
+	*)
+	   echo "Upozorenje: Nepredviđen odgovor. Skripta će se prekinuti."
+	   exit 1;;	   
+  esac
+done

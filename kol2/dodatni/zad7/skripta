@@ -1,0 +1,8 @@
+#!/bin/bash
+
+while IFS=' ' read -r username password; 
+do
+  if [[ ${#password} -gt 8 ]]; then
+	echo "$username" >> invalid_passwords
+  fi
+done < ~/materijali/user_passwd_list

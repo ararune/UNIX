@@ -1,0 +1,15 @@
+#!/bin/bash
+
+while true
+do
+  read -p "Current time and date is: $(date). Repeat? (y/n): " INPUT
+
+  if [[ $INPUT == "y" || $INPUT == "Y" ]]; then
+	continue
+  elif [[ $INPUT == "n" || $INPUT == "N" ]]; then
+	break
+  else
+	echo "Invalid answer, expected (y/n)."
+  fi
+
+done

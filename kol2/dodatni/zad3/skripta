@@ -1,0 +1,10 @@
+#!/bin/bash
+
+url="www.oss.unist.hr/index.php"
+
+if ping -c 1 www.oss.unist.hr &>/dev/null
+then
+  wget $url &>/dev/null
+else
+  echo "Server unavailable"
+fi
